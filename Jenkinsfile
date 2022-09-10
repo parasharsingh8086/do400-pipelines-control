@@ -1,6 +1,6 @@
 node('nodejs') {
     stage('Checkout') {
-        git branch: 'main', url: 'https://github.com/parasharsingh8086/do400-pipelines-control'
+        git branch: 'master', url: 'https://github.com/parasharsingh8086/do400-pipelines-control'
     }
     stage('Backend Tests') {
         sh 'node ./backend/test.js'
